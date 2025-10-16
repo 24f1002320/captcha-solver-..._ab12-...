@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Captcha Solver</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Captcha Solver</h1>
+    <div class="form-group">
+      <label for="captchaUrl">Enter Captcha Image URL:</label>
+      <input type="text" id="captchaUrl" placeholder="https://example.com/image.png">
+      <button id="solveBtn">Solve Captcha</button>
+    </div>
+    <div id="imageContainer" class="image-container">
+      <img id="captchaImage" src="" alt="Captcha" style="display: none;"/>
+    </div>
+    <div class="result">
+      <h3>Solved Captcha Text:</h3>
+      <p id="solvedText"></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
